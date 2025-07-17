@@ -1,0 +1,16 @@
+export { authRouter } from './auth.js';
+export { adminRouter } from './admin.js';
+export { businessRouter } from './business.js';
+export { bookingRouter } from './booking.js';
+export { settlementRouter } from './settlement.js';
+export { notificationRouter } from './notification.js';
+export { analyticsRouter } from './analytics.js';
+export { settingsRouter } from './settings.js';
+export { websiteRouter } from './website.js';
+export { userRouter } from './user.js';
+export { reviewRouter } from './review.js';
+export { searchRouter } from './search.js';
+export { financeRouter } from './finance.js';
+export { crmRouter } from './crm.js';
+export { uploadRouter } from './upload.js';
+export { savedBusinessRouter } from './savedBusiness.js';
