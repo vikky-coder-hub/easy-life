@@ -27,20 +27,6 @@ export const bookingController = {
     }
   },
 
-  async getMyBookings(req, res, next) {
-    try {
-      console.log('Getting bookings for current user:', req.user.userId);
-      const bookings = await BookingService.getCustomerBookings(req.user.userId, req.user);
-      sendResponse(res, 200, {
-        success: true,
-        data: bookings,
-      });
-    } catch (error) {
-      console.error('Get my bookings error:', error.message);
-      next(error);
-    }
-  },
-
   async getSellerBookings(req, res, next) {
     try {
       const bookings = await BookingService.getSellerBookings(req.params.id, req.user);

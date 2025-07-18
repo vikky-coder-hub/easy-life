@@ -4,7 +4,7 @@ import mongoose from 'mongoose';
 import helmet from 'helmet';
 import cors from 'cors';
 import { rateLimiter, errorHandler, multerMiddleware } from './api/middlewares/index.js';
-import { authRouter, businessRouter, bookingRouter, settlementRouter, notificationRouter, analyticsRouter, settingsRouter, websiteRouter, userRouter, reviewRouter, searchRouter, financeRouter, crmRouter, uploadRouter, savedBusinessRouter } from './api/routes/index.js';
+import { authRouter, businessRouter, bookingRouter, settlementRouter, notificationRouter, analyticsRouter, settingsRouter, websiteRouter, userRouter, reviewRouter, searchRouter, financeRouter, crmRouter, uploadRouter } from './api/routes/index.js';
 import { cloudinaryConfig } from './api/utils/cloudinary.js';
 
 const app = express();
@@ -39,7 +39,6 @@ app.use('/api/search', searchRouter);
 app.use('/api/finances', financeRouter);
 app.use('/api/crm', crmRouter);
 app.use('/api/upload', uploadRouter);
-app.use('/api/saved-businesses', savedBusinessRouter);
 
 // Error handling
 app.use(errorHandler);

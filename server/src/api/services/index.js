@@ -13,4 +13,3 @@ export { SearchService } from './search.js';
 export { FinanceService } from './finance.js';
 export { CRMService } from './crm.js';
 export { UploadService } from './upload.js';
-export { SavedBusinessService } from './savedBusiness.js';

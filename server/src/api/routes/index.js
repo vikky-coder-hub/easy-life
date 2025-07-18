@@ -13,4 +13,3 @@ export { searchRouter } from './search.js';
 export { financeRouter } from './finance.js';
 export { crmRouter } from './crm.js';
 export { uploadRouter } from './upload.js';
-export { savedBusinessRouter } from './savedBusiness.js';

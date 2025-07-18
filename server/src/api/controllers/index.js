@@ -13,4 +13,3 @@ export { searchController } from './search.js';
 export { financeController } from './finance.js';
 export { crmController } from './crm.js';
 export { uploadController } from './upload.js';
-export { savedBusinessController } from './savedBusiness.js';

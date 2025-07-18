@@ -49,13 +49,6 @@ export const BookingService = {
     return booking;
   },
 
-  async getCustomerBookings(customerId, user) {
-    const bookings = await Booking.find({ customerId })
-      .populate('businessId', 'name email phone profileImage ownerName')
-      .sort({ createdAt: -1 });
-    return bookings;
-  },
-
   async updateStatus(id, status, cancellationReason, user) {
     const booking = await Booking.findById(id);
     if (!booking) throw new Error('Booking not found');
